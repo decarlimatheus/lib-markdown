@@ -4,15 +4,15 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "jest ./test",
-    "cli": "node cli.js ./arquivos/texto1.md",
-    "banana": "cross-env NODE_OPTIONS=--experimental-vm-modules npx jest"
+    "test-error": "jest ./test",
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules npx jest",
+    "cli": "node cli.js ./arquivos/texto1.md"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "chalk": "^5.0.1",
+    "chalk": "^4.1.2",
     "cross-env": "^7.0.3",
     "node-fetch": "^3.2.6"
   },
